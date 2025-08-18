@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes and nth child pseoudo selectors</title>
+    <style>
+        input{display: block;}
+        .container{
+            display: block;
+            width: 250px;
+            margin: auto;
+        }
+        input[type="text"]{
+            background-color: aqua;
+            padding: 10px;
+        }
+        a[target]{
+            color: black;
+        }
+        a[target="_self"]{
+            color: red;
+        }
+        li:nth-child(3){
+            color: red;
+        }
+        li:nth-child(2n+0){
+            background-color: blue;
+        }
+        li:nth-child(odd){
+            background-color: rgb(60, 210, 30);
+        }
+        li{
+            padding: 7px;
+            margin: 7px;
+        }
+        li:nth-child(4n+0){
+            color: rgb(253, 247, 246);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><a href="http://google.com" target="_blank">Google</a></h1>
+        <h1><a href="http://Facebook.com" target="_self">Facebook</a></h1>
+
+        <form action="" class="form"></form>
+        <input type="text" placeholder="Enter your name">
+        <input type="password" placeholder="Enter your password">
+        <input type="submit" value="Submit">
+        <ul>
+            <li class="item" id="item1">Item 1</li>
+            <li class="item" id="item2">Item 2</li>
+            <li class="item" id="item3">Item 3</li>
+            <li class="item" id="item4">Item 4</li>
+            <li class="item" id="item5">Item 5</li>
+            <li class="item" id="item6">Item 6</li>
+            <li class="item" id="item7">Item 7</li>
+            <li class="item" id="item8">Item 8</li>
+            <li class="item" id="item9">Item 9</li>
+            <li class="item" id="item10">Item 10</li>
+            <li class="item" id="item11">Item 11 </li>
+            <li class="item" id="item12">Item 12</li>
+            <li class="item" id="item13">Item 13</li>
+        </ul>
+    
+    </div>
+</body>
+</html>
